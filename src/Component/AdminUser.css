@@ -1,0 +1,66 @@
+/* AdminUser.css */
+
+/* Style for the container */
+.admin-container {
+    padding: 20px;
+}
+
+/* Style for the user list */
+.user-list {
+    margin-top: 20px;
+}
+
+/* Style for user cards */
+.user-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.user-card:hover {
+    transform: scale(1.03);
+}
+
+.selected {
+    border: 2px solid #1890ff; /* Highlight selected card */
+}
+
+/* Style for user details form */
+.user-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-details label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.user-details input, .user-details select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the Add User button */
+.add-user-button {
+    margin-top: 20px; /* Position button after the heading */
+}
+
+/* Style for the modal */
+.ant-modal {
+    max-width: 600px;
+}
+
+.ant-modal-body {
+    padding: 20px;
+}
+
+.ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ant-input {
+    margin-bottom: 10px;
+}

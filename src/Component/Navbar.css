@@ -1,0 +1,153 @@
+/* Navbar.css */
+
+/* ปรับพื้นหลังของ Header และเงาให้ดูสะอาดตา */
+.ant-layout-header {
+    background-color: #ffffff;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the logo section */
+.logo {
+    float: left;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
+    font-family: 'Anuphan', sans-serif;
+    font-weight: 600; /* เพิ่มความหนาเล็กน้อย */
+    transition: color 0.3s ease;
+}
+
+.logo h2:hover {
+    color: #1890ff; /* เปลี่ยนสีเมื่อ hover บนโลโก้ */
+}
+
+/* ปรับการแสดงผลเมนูให้เข้ากัน */
+.ant-menu-horizontal {
+    line-height: 64px;
+    border-bottom: none;
+    display: flex;
+    justify-content: center; /* จัดเมนูให้อยู่ตรงกลาง */
+    background-color: transparent; /* เอาพื้นหลังออก */
+}
+
+.ant-menu-item {
+    font-size: 16px;
+    font-family: 'Anuphan', sans-serif;
+    padding: 0 15px; /* เพิ่มพื้นที่ห่างระหว่างเมนู */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* เพิ่มการเปลี่ยนอย่างนุ่มนวล */
+}
+
+/* เปลี่ยนสีตัวอักษรในเมนูปกติ */
+.ant-menu-item a {
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+/* เน้นเมนูที่ถูกเลือก */
+.ant-menu-item-selected {
+    border-bottom: 2px solid #1890ff;
+}
+
+.ant-menu-item:hover {
+    border-bottom: 2px solid #1890ff;
+    color: #1890ff !important;
+}
+
+/* ปุ่ม Login */
+.ant-btn-primary {
+    bottom: 10px;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    font-family: 'Anuphan', sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.ant-btn {
+    margin-right: 20px;
+    float: right;
+    transform: translateY(20px);
+    border-radius: 4px; /* เพิ่มความมนให้ปุ่ม */
+}
+
+/* Icon แจ้งเตือน */
+.notification-badge {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.notification-icon {
+    font-size: 24px;
+    color: #1890ff;
+    transition: color 0.3s ease; /* เพิ่มการเปลี่ยนสีอย่างนุ่มนวล */
+}
+
+.notification-icon:hover {
+    color: #40a9ff; /* เปลี่ยนสีเมื่อ hover บนไอคอน */
+}
+
+/* Modal การแจ้งเตือน */
+.notification-modal {
+    width: 300px;
+    border-radius: 8px; /* เพิ่มความโค้งมน */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้กับ modal */
+}
+
+/* รายการแจ้งเตือน */
+.notification-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.read {
+    background-color: #f7f7f7;
+    color: #888888;
+}
+
+.unread {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.read-title {
+    color: #888888;
+}
+
+.unread-title {
+    color: #333333;
+}
+
+.read-description {
+    color: #666666;
+}
+
+.unread-description {
+    color: #333333;
+}
+
+.notification-timestamp {
+    font-size: 0.85em;
+    color: gray;
+}

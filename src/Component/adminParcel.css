@@ -1,0 +1,32 @@
+.admin-parcel-page {
+    padding: 20px;
+}
+
+.parcel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.parcel-table th, .parcel-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.parcel-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}

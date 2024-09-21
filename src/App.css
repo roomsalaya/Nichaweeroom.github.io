@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ทำให้แอปมีความสูงเต็มจอ */
+}
+
+.content-wrap {
+  flex: 1; /* ขยายพื้นที่ content-wrap เพื่อเติมเต็มพื้นที่ที่เหลือ */
+}
+
+footer {
+  background-color: #9c9c9c;
+  text-align: center;
+  padding: 1rem;
+}

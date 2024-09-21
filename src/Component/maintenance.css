@@ -1,0 +1,66 @@
+/* maintenance.css */
+
+/* General styling for the form */
+.maintenance-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance-form div {
+    margin-bottom: 15px;
+}
+
+.maintenance-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.maintenance-form input[type="text"],
+.maintenance-form textarea,
+.maintenance-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.maintenance-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.maintenance-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.maintenance-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.maintenance-form button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.loading-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loading-container .ant-spin {
+    margin: 0 auto;
+}

@@ -1,0 +1,88 @@
+/* General Styles */
+.parcel-list {
+    font-family: 'Anuphan', sans-serif;
+    padding: 20px;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto; /* Enables horizontal scrolling on small screens */
+}
+
+/* Table Styles */
+.parcel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.parcel-table th, .parcel-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.parcel-table th {
+    background-color: #f4f4f4;
+}
+
+/* Parcel Image */
+.parcel-image {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px; /* Adjust max-width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%; /* Full width for responsive image */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .parcel-table th, .parcel-table td {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .parcel-image {
+        width: 80px; /* Smaller image size for mobile */
+    }
+
+    .modal-content {
+        width: 95%; /* Ensure modal fits on smaller screens */
+    }
+}

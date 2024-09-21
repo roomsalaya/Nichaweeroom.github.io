@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { getDocs, collection, deleteDoc, doc, updateDoc } from 'firebase/firestore';
 import { db } from './firebaseConfig';
 import Navbar from './Navbar';
-import { List, Spin, message, Modal, Button } from 'antd';
+import { Button, List, Spin, message, Modal } from 'antd';
 import './MaintenanceList.css';
-
 interface MaintenanceReportData {
     id: string;
     issueDescription: string;
@@ -120,7 +119,10 @@ const MaintenanceList: React.FC = () => {
                         )}
                         <p>{`วันที่แจ้ง: ${new Date(selectedReport.timestamp.seconds * 1000).toLocaleString()}`}</p>
                         <p>{`สถานะ: ${selectedReport.status || 'ยังไม่ได้ระบุ'}`}</p>
-                        <Button onClick={() => handleUpdateStatus(selectedReport.id)} style={{ marginRight: '10px' }}>
+                        <Button
+                            onClick={() => handleUpdateStatus(selectedReport.id)}
+                            style={{ marginRight: '10px' }}
+                        >
                             {selectedReport.status === 'ซ่อมแซมแล้ว' ? 'เปลี่ยนเป็นรอดำเนินการ' : 'เปลี่ยนเป็นซ่อมแซมแล้ว'}
                         </Button>
                         <Button danger onClick={() => handleDelete(selectedReport.id)}>

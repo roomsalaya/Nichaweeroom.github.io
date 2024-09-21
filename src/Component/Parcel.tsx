@@ -26,9 +26,9 @@ function Parcel() {
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (!recipient || !trackingNumber || parcelType.length === 0 || !image) {
-            message.warning("กรุณากรอกข้อมูลให้ครบถ้วน");
+            message.info("กรุณากรอกข้อมูลให้ครบถ้วน");
             return;
-        }
+        }        
 
         setIsSubmitting(true); // Set submitting state
         setLoading(true); // เริ่มการโหลด

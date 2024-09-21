@@ -1,10 +1,10 @@
-import { Card, Row, Col, Progress, Spin, message } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { getAuth } from 'firebase/auth';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import Navbar from './Navbar';
 import './AdminDashboard.css';
-import { PieChart, Pie, Tooltip, Cell, Legend, ResponsiveContainer } from 'recharts';
+import { Row, Col, Card, Progress, Spin, message as AntMessage } from 'antd'; // Import message from Ant Design
+import { PieChart, Pie, Tooltip, Legend, Cell, ResponsiveContainer } from 'recharts';
 
 interface RoomStatus {
     available: number;
@@ -43,7 +43,7 @@ const AdminDashboard: React.FC = () => {
                     setRoomStatus({ available: availableCount, occupied: occupiedCount });
                 } catch (error) {
                     console.error("Error fetching user data:", error);
-                    message.error('เกิดข้อผิดพลาดในการดึงข้อมูล');
+                    AntMessage.error('เกิดข้อผิดพลาดในการดึงข้อมูล'); // Use Ant Design's message for error
                 } finally {
                     setLoading(false);
                 }
